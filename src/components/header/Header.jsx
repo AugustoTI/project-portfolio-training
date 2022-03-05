@@ -1,11 +1,29 @@
 import React from 'react';
+import * as Styled from './headerStyled';
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as MenuMobile } from '../../assets/menuMobile.svg';
+import { useMedia } from '../../hooks/useMedia';
 
 export const Header = () => {
+  const [mobileActive, setMobileActive] = React.useState(false);
+  const mobile = useMedia('(max-width:600px)');
+
+  const handleMobile = () => setMobileActive(!mobileActive);
+
   return (
-    <header>
-      <nav>
-        <ul>
+    <Styled.Header>
+      <Styled.Nav className="container">
+        {mobile && (
+          <button onClick={handleMobile}>
+            <MenuMobile />
+          </button>
+        )}
+
+        <ul
+          className={`${mobile ? 'mobile' : 'desktop'} ${
+            mobileActive && 'mobileActive'
+          }`}
+        >
           <li>
             <NavLink to="/" end>
               Home
@@ -18,7 +36,7 @@ export const Header = () => {
             <NavLink to="/works">Works</NavLink>
           </li>
         </ul>
-      </nav>
-    </header>
+      </Styled.Nav>
+    </Styled.Header>
   );
 };
