@@ -6,6 +6,7 @@ export const Header = styled.header`
   z-index: 10;
   top: 0;
   background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 `;
 
 export const Nav = styled.nav`

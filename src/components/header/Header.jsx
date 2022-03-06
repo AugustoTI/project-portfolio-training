@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Styled from './headerStyled';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { ReactComponent as MenuMobile } from '../../assets/menuMobile.svg';
 import { useMedia } from '../../hooks/useMedia';
 
@@ -9,6 +9,12 @@ export const Header = () => {
   const mobile = useMedia('(max-width:600px)');
 
   const handleMobile = () => setMobileActive(!mobileActive);
+
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    setMobileActive(false);
+  }, [pathname]);
 
   return (
     <Styled.Header>
