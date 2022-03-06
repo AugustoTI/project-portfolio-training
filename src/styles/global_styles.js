@@ -41,6 +41,20 @@ export const GlobalStyled = createGlobalStyle`
     margin: 0 auto;
   }
 
+  .title {
+    font-size: 4.4rem;
+    font-weight: bold;
+    line-height: 1.36;
+    color: var(--dark);
+  }
+
+  @media (max-width: 760px) {
+    .title {
+      font-size: 3.2rem;
+    }
+    
+  }
+
   img {
     max-width: 100%;
     display: block;

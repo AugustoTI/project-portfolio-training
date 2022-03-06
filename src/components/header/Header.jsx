@@ -6,7 +6,7 @@ import { useMedia } from '../../hooks/useMedia';
 
 export const Header = () => {
   const [mobileActive, setMobileActive] = React.useState(false);
-  const mobile = useMedia('(max-width:600px)');
+  const mobile = useMedia('(max-width:700px)');
 
   const handleMobile = () => setMobileActive(!mobileActive);
 
