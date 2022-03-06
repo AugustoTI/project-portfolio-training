@@ -4,7 +4,7 @@ export const Main = styled.main`
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 6rem;
-  padding: 8rem 2.4rem;
+  padding: 8rem 1.6rem;
 
   .main-content {
     .main-text {
@@ -58,4 +58,11 @@ export const Main = styled.main`
       grid-row: 1;
     }
   }
+`;
+
+export const Div = styled.div`
+  display: grid;
+  grid-template-columns: ${({ mobile }) => (mobile ? '1fr' : '1fr 1fr')};
+  padding: 3.2rem 1.6rem;
+  gap: 2rem;
 `;

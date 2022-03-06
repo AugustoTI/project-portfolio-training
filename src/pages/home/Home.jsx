@@ -1,8 +1,12 @@
 import React from 'react';
 import HeroPhoto from '../../assets/heroPhoto.png';
-import * as Styled from './styled';
+import * as Styled from './homeStyled';
+import { Posts } from '../../components/posts/Posts';
+import { useMedia } from '../../hooks/useMedia';
 
 export const Home = () => {
+  const match = useMedia('(max-width:760px)');
+
   return (
     <>
       <Styled.Main className="container">
@@ -21,6 +25,12 @@ export const Home = () => {
           <img src={HeroPhoto} alt="The professional" />
         </div>
       </Styled.Main>
+      <section style={{ backgroundColor: '#EDF7FA' }}>
+        <Styled.Div mobile={match} className="container">
+          <Posts title="Making a design system from scratch" />
+          <Posts title="Creating pixel perfect icons in Figma" />
+        </Styled.Div>
+      </section>
     </>
   );
 };
