@@ -39,7 +39,7 @@ export const Nav = styled.nav`
     justify-items: center;
     gap: 1.6rem;
     position: absolute;
-    top: 6.5rem;
+    top: 7.8rem;
     transform: translateX(30px);
     opacity: 0;
     pointer-events: none;

@@ -21,7 +21,7 @@ export const GlobalStyled = createGlobalStyle`
     height: 2000px ;
     font-family: 'Heebo';
     --primary: #FF6464;
-    --secondry: #00A8CC;
+    --secondary: #00A8CC;
     --dark: #21243D;
     --light: #8695A4;
   }

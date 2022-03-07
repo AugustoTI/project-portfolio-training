@@ -59,10 +59,3 @@ export const Main = styled.main`
     }
   }
 `;
-
-export const Div = styled.div`
-  display: grid;
-  grid-template-columns: ${({ mobile }) => (mobile ? '1fr' : '1fr 1fr')};
-  padding: 3.2rem 1.6rem;
-  gap: 2rem;
-`;

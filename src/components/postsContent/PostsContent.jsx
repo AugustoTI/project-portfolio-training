@@ -1,10 +1,10 @@
 import React from 'react';
 import * as Styled from './postsSyled';
 
-export const Posts = ({ title }) => {
+export const PostsContent = ({ title }) => {
   return (
     <Styled.Article>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <Styled.Ul>
         <li>12 Feb 2020</li>
         <li>Design, Pattern</li>

@@ -6,7 +6,7 @@ export const Article = styled.article`
   color: var(--dark);
   border-radius: 0.4rem;
 
-  h2 {
+  h3 {
     font-size: 2.6rem;
     font-weight: bold;
   }
