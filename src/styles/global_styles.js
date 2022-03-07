@@ -18,7 +18,6 @@ export const GlobalStyled = createGlobalStyle`
   body {
     font-size: 1.6rem;
     margin-top: 7rem ;
-    height: 2000px ;
     font-family: 'Heebo';
     --primary: #FF6464;
     --secondary: #00A8CC;

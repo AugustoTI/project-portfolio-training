@@ -6,7 +6,7 @@ export const DivPosts = styled.div`
   gap: 2rem;
 `;
 
-export const DivTitle = styled.div`
+export const Header = styled.header`
   display: flex;
   justify-content: ${({ mobile }) => (mobile ? 'center' : 'space-between')};
   align-items: center;
