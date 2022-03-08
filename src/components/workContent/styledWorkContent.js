@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Article = styled.article`
   display: grid;
-  grid-template-columns: ${({ mobile }) => (mobile ? '1fr' : '3fr 7fr')};
+  grid-template-columns: ${({ mobile }) => (mobile ? '1fr' : '24.3rem 1fr')};
   gap: 1.8rem;
   color: var(--dark);
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const UlBlog = styled.ul`
   display: grid;
   gap: 3.2rem;
-  margin-top: ${({ mobile }) => (mobile ? '2rem' : '5rem')};
+  margin-top: ${({ mobile }) => (mobile ? '3rem' : '3.6rem')};
 
   > li::after {
     display: block;
